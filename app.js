@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const verticalData = {
         massage: {
-            title: "KI-Büro für Massage- & Wellnessstudios",
+            title: "YOA für Massage- & Wellnessstudios",
             lead: "Sichern Sie sich jede Massagebuchung, auch außerhalb Ihrer Öffnungszeiten. Die KI berät zu Massagen, findet freie Therapeuten und bucht Termine direkt in Ihrem Kalender.",
             uses: [
                 "<strong>24/7 Terminbuchung:</strong> Buchen, Verschieben und Stornieren von Massagen direkt über WhatsApp oder Telefon.",
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         },
         physio: {
-            title: "KI-Büro für Physiotherapie & Osteopathie",
+            title: "YOA für Physiotherapie & Osteopathie",
             lead: "Entlasten Sie Ihren Empfang. Die KI klärt Rezeptfragen (Kassen- oder Privatrezept), bucht Ersttermine und erfasst Patientendaten vollkommen DSGVO-konform.",
             uses: [
                 "<strong>Rezept-Vorqualifizierung:</strong> Abfrage von Rezeptart, Heilmittelverordnung und Dringlichkeit.",
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         },
         spa: {
-            title: "KI-Büro für Kosmetik- & Beauty-Salons",
+            title: "YOA für Kosmetik- & Beauty-Salons",
             lead: "Erreichen Sie 100% Buchungsquote für Gesichtsbehandlungen, Maniküre und Stylings. Die KI beantwortet Fragen zu Inhaltsstoffen und empfiehlt die passenden Treatments.",
             uses: [
                 "<strong>Treatment-Beratung:</strong> Sofortige Auskunft über Dauer, Preise, Treatments und verwendete Kosmetikprodukte.",
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         },
         yoga: {
-            title: "KI-Büro für Yoga, Pilates & Fitness",
+            title: "YOA für Yoga, Pilates & Fitness",
             lead: "Automatisieren Sie den Check-in für Probetrainings und Kurse. Die KI klärt Fragen zu Mitgliedschaften, Preisen und Kursplänen rund um die Uhr.",
             uses: [
                 "<strong>Probetraining-Intake:</strong> Erfassung von Fitnesszielen, Vorkenntnissen und Buchen von Einführungsstunden.",
@@ -272,7 +272,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sliderConvRateText.innerText = `${sliderConvRate.value} %`;
 
         // ROI calculation:
-        // Let's assume the KI-Büro answers and saves 85% of missed calls
+        // Let's assume YOA answers and saves 85% of missed calls
         const capturedCalls = missedCalls * 0.85;
         const wonLeads = capturedCalls * convRate;
         const recoveredRevenue = Math.round(wonLeads * leadValue);
