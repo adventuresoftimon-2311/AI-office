@@ -19,16 +19,17 @@ document.addEventListener('DOMContentLoaded', () => {
             lead: "Sichern Sie sich jede Massagebuchung, auch außerhalb Ihrer Öffnungszeiten. Die KI berät zu Massagen, findet freie Therapeuten und bucht Termine direkt in Ihrem Kalender.",
             uses: [
                 "<strong>24/7 Terminbuchung:</strong> Buchen, Verschieben und Stornieren von Massagen direkt über WhatsApp oder Telefon.",
-                "<strong>Therapeuten- & Raumplanung:</strong> Die KI berücksichtigt Arbeitszeiten der Therapeuten und die Verfügbarkeit von Massageräumen.",
-                "<strong>Präferenz-Erfassung:</strong> DSGVO-konforme Speicherung von Behandlungsnotizen, Öl-Vorlieben oder Allergien.",
+                "<strong>Mitarbeiter- & Raumplanung:</strong> Die KI berücksichtigt Arbeitszeiten der Therapeuten und die Verfügbarkeit von Massageräumen.",
+                "<strong>Eskalation bei Sonderfragen:</strong> Die KI erkennt medizinische oder behandlungsbezogene Fragen und leitet diese zur persönlichen Klärung an Ihr Team weiter.",
                 "<strong>Automatische Erinnerungen:</strong> WhatsApp-Reminders reduzieren No-Shows um bis zu 85%."
             ],
             chat: [
                 { type: 'incoming', text: 'Hallo! Kann ich morgen Nachmittag eine 60-minütige Aromaöl-Massage buchen?' },
                 { type: 'ai', text: 'Guten Tag! Morgen Nachmittag um 15:30 Uhr haben wir einen freien Termin bei unserer Masseurin Elena. Passt Ihnen das?' },
-                { type: 'incoming', text: 'Ja, das passt perfekt. Können wir Lavendelöl nutzen?' },
-                { type: 'ai', text: 'Sehr gerne, ich habe Elena Bescheid gegeben und Lavendelöl in Ihren Behandlungsnotizen vermerkt. Der Termin ist für Sie gebucht!' },
-                { type: 'system', text: '✓ Terminslot bei Elena blockiert & Lavendelöl-Wunsch DSGVO-konform in der Kundenkartei hinterlegt.' }
+                { type: 'incoming', text: 'Ja, das passt perfekt. Ich bin allerdings schwanger - geht das bei dieser Massage?' },
+                { type: 'ai', text: 'Herzlichen Glückwunsch! Um Ihre Sicherheit zu garantieren, sollte unser Team diese Frage persönlich beantworten. Ich buche den Termin gerne vorab für Sie und leite Ihre Frage sofort zur Klärung weiter. Ist das in Ordnung?' },
+                { type: 'incoming', text: 'Ja, danke, das ist super.' },
+                { type: 'system', text: '✓ Termin reserviert & Schwangerschafts-Rückfrage direkt an Mitarbeiter eskaliert.' }
             ]
         },
 
@@ -146,37 +147,37 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             type: 'incoming',
-            text: 'Das passt perfekt! Ist Elena eine zertifizierte Masseurin?',
-            duration: 1500
+            text: 'Das passt perfekt! Ich habe allerdings starke Rückenschmerzen wegen eines Bandscheibenvorfalls. Kann ich die Massage trotzdem machen?',
+            duration: 2000
         },
         {
             type: 'ai',
-            text: 'Ja, Elena ist staatlich anerkannte Masseurin mit 5 Jahren Erfahrung. Zur Buchung benötige ich noch Ihren Namen und Ihr kurzes Einverständnis (Opt-in) für unsere DSGVO-konformen Termin-Erinnerungen.',
-            duration: 3000
+            text: 'Vielen Dank für den Hinweis. Gesundheitliche Fragen sollte unser Team persönlich mit Ihnen besprechen. Ich reserviere den Termin um 14:00 Uhr vorab und leite Ihre Frage direkt an unsere Therapeuten weiter, damit wir Sie kontaktieren können. Wie lautet Ihr Name?',
+            duration: 3500
         },
         {
             type: 'incoming',
-            text: 'Mein Name ist Sarah König. Ich stimme der DSGVO-Verarbeitung für meine Buchung und Erinnerungen per WhatsApp zu.',
+            text: 'Mein Name ist Sarah König. Ich stimme der DSGVO-Verarbeitung für meine Kontaktdaten zu.',
             duration: 2200
         },
         {
             type: 'ai',
-            text: 'Super, vielen Dank Frau König! Der Termin am Samstag um 14:00 Uhr bei Elena ist fest für Sie gebucht. Ich habe Ihnen die Bestätigung gerade per WhatsApp zugeschickt.',
+            text: 'Vielen Dank, Frau König. Der Termin am Samstag um 14:00 Uhr bei Elena ist vorab reserviert und unser Team meldet sich in Kürze wegen Ihrer Rückfrage.',
             duration: 2500
         },
         {
             type: 'system',
-            text: '✓ Kalender blockiert: Elena (Samstag, 14:00 Uhr, Massage-Raum 2)',
+            text: '✓ Termin reserviert: Elena (Samstag, 14:00 Uhr, Massage-Raum 2)',
             duration: 1200
         },
         {
             type: 'system',
-            text: '✓ DSGVO-Opt-In: Einverständnis von Sarah König verschlüsselt protokolliert',
+            text: '✓ Eskalation: Gesundheitliche Rückfrage (Rückenschmerzen) an Team weitergeleitet',
             duration: 1200
         },
         {
             type: 'system',
-            text: '✓ Kundendaten-Schutz: Kundenkartei verschlüsselt in deutscher Cloud angelegt',
+            text: '✓ DSGVO-Verschlüsselung: Kontaktdaten sicher in deutscher Cloud gespeichert',
             duration: 1800
         }
     ];
