@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KI-Büro | 24/7 Frontoffice-Automatisierung für KMU</title>
+    <meta name="description" content="Nie wieder einen Erstkontakt verlieren. Unser KI-Büro nimmt Anrufe und WhatsApp-Nachrichten an, bucht Termine, legt Leads im CRM an und entlastet Ihr Team. Ab 299€/Monat.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <span>KI-Büro<span class="logo-accent">.ai</span></span>
+            </a>
+            <nav class="nav-links">
+                <a href="#features" class="nav-link">Funktionen</a>
+                <a href="#branchen" class="nav-link">Branchen</a>
+                <a href="#simulator" class="nav-link">Live-Demo</a>
+                <a href="#roi" class="nav-link">ROI-Rechner</a>
+                <a href="#pricing" class="nav-link">Preise</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#roi" class="btn btn-white open-modal-btn">Kostenlos testen</a>
+                <a href="#pricing" class="btn btn-primary open-modal-btn">Jetzt starten</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="badge">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    Operatives Frontoffice-Betriebssystem
+                </div>
+                <h1>Nie wieder einen <span>Erstkontakt</span> verlieren.</h1>
+                <p>Ihr KI-Büro nimmt Anrufe und WhatsApp-Nachrichten 24/7 an, beantwortet Fragen, bucht Termine, legt Kontakte im CRM an und entlastet Ihr Team sofort von administrativen Aufgaben. DSGVO-konform und in 72 Stunden startklar.</p>
+                <div class="hero-ctas">
+                    <a href="#" class="btn btn-primary open-modal-btn" data-plan="Core">Live-Demo buchen</a>
+                    <a href="#roi" class="btn btn-secondary">ROI berechnen</a>
+                </div>
+                <div class="trust-elements">
+                    <div class="trust-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        100% DSGVO-konform
+                    </div>
+                    <div class="trust-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        In 72h einsatzbereit
+                    </div>
+                    <div class="trust-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                        Deutscher Support
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="assets/dashboard_preview.png" alt="KI-Büro Dashboard-Vorschau mit Buchungen und CRM-Sync">
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Logos -->
+    <section class="logos-section">
+        <div class="container">
+            <h3 class="logos-title">Nahtlose Integration in Ihre bestehenden Systeme</h3>
+            <div class="logos-grid">
+                <div class="logo-item">Placetel</div>
+                <div class="logo-item">sipgate</div>
+                <div class="logo-item">HubSpot</div>
+                <div class="logo-item">Pipedrive</div>
+                <div class="logo-item">Lexware</div>
+                <div class="logo-item">sevdesk</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verticals / Industry Switcher Section -->
+    <section id="branchen" class="verticals section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="badge badge-success">Spezifische Branchenlösungen</div>
+                <h2>Optimiert für Ihren Betriebsalltag</h2>
+                <p>Keine starre Universallösung. Unser KI-Büro kommt mit vorkonfigurierten Templates für Ihre Industrie, um schnellstmöglich echten Mehrwert zu liefern.</p>
+            </div>
+
+            <!-- Tab Buttons -->
+            <div class="vertical-tabs">
+                <button class="tab-btn active" data-vertical="immobilien">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    Immobilien & Makler
+                </button>
+                <button class="tab-btn" data-vertical="kfz">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                    KFZ-Betriebe
+                </button>
+                <button class="tab-btn" data-vertical="beauty">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path><path d="M2 12h20"></path></svg>
+                    Beauty & Wellness
+                </button>
+                <button class="tab-btn" data-vertical="b2b">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    B2B-Dienstleister
+                </button>
+            </div>
+
+            <!-- Tab Content -->
+            <div id="vertical-content-box" class="vertical-content-panel">
+                <div class="tab-content active" id="tab-content-active">
+                    <div class="vertical-grid">
+                        <div class="vertical-info">
+                            <h3>KI-Büro für Immobilienmakler & Hausverwaltungen</h3>
+                            <p class="lead-text">Erreichen Sie eine lückenlose Erreichbarkeit für Miet- und Kaufinteressenten. Ihr KI-Assistent qualifiziert Anfragen vor und bucht Besichtigungstermine direkt in Ihrem Kalender.</p>
+                            <ul class="use-case-list">
+                                <li>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <div><strong>24/7 Lead-Intake:</strong> Erfassung von Suchprofilen, Budget und Kontaktdaten zu jeder Tageszeit.</div>
+                                </li>
+                                <li>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <div><strong>Automatische Terminbuchung:</strong> Direktes Anbieten und Buchen von Besichtigungsterminen aus Ihrem Google- oder Outlook-Kalender.</div>
+                                </li>
+                                <li>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <div><strong>Objekt-Routing:</strong> Weiterleitung qualifizierter Anfragen an die zuständigen Makler.</div>
+                                </li>
+                                <li>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <div><strong>CRM-Synchronisation:</strong> Sofortiges Anlegen von Kontakten und Notizen in HubSpot oder Pipedrive.</div>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-primary open-modal-btn" data-plan="Core">Branchenlösung anfordern</a>
+                        </div>
+                        <div class="vertical-visual">
+                            <div class="demo-phone-card">
+                                <div class="phone-header">
+                                    <div class="phone-avatar">KB</div>
+                                    <div class="phone-meta">
+                                        <h4>KI-Büro Assistent</h4>
+                                        <p>Online | Aktiv</p>
+                                    </div>
+                                </div>
+                                <div class="chat-messages">
+                                    <!-- Populated via JS -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features Grid -->
+    <section id="features" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="badge">Leistungsumfang</div>
+                <h2>Alle Frontoffice-Prozesse im Griff</h2>
+                <p>Unser MVP deckt genau die Funktionen ab, die sofortige Arbeitsentlastung bringen und Medienbrüche in Ihrem Büro verhindern.</p>
+            </div>
+            
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    </div>
+                    <h3>KI-Anrufannahme</h3>
+                    <p>Die KI nimmt Anrufe mit natürlicher Stimme an, erkennt das Anliegen (Intent) des Anrufers, beantwortet FAQs und nimmt Anfragen strukturiert auf.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                    </div>
+                    <h3>WhatsApp Business Inbox</h3>
+                    <p>Zentrale Inbox für alle WhatsApp-Verläufe. Die KI antwortet automatisch auf wiederkehrende Fragen und übergibt komplexe Fälle an Mitarbeiter.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    </div>
+                    <h3>Intelligente Kalenderbuchung</h3>
+                    <p>Direkte Anbindung an Google Calendar oder Microsoft Graph. Die KI liest freie Zeiten aus und trägt Termine ohne Doppelbuchungen ein.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h3>CRM- & Buchhaltungs-Sync</h3>
+                    <p>Die KI legt gewonnene Leads und Kontaktdaten vollautomatisch in HubSpot/Pipedrive an. Rechnungs-Trigger werden an Lexware/sevdesk übergeben.</p>
+                </div>
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><line x1="19" y1="8" x2="19" y2="14"></line><line x1="22" y1="11" x2="16" y2="11"></line></svg>
+                    </div>
+                    <h3>Human-Handoff</h3>
+                    <p>Sicherheit geht vor. Sobald ein Anliegen zu komplex wird oder eine persönliche Beratung nötig ist, erfolgt die Eskalation an das Team per Mail/Slack.</p>
+                </div>
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    </div>
+                    <h3>Transkripte & Zusammenfassungen</h3>
+                    <p>Keine handschriftlichen Notizen mehr. Nach jedem Telefonat oder Chat erhält das Team eine KI-generierte Zusammenfassung mit den Kern-Aha-Momenten.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Console Simulator Section -->
+    <section id="simulator" class="simulator-section section-padding">
+        <div class="container sim-container">
+            <div class="sim-header">
+                <div class="badge badge-success">Live-Simulation</div>
+                <h2>Sehen Sie das KI-Büro in Aktion</h2>
+                <p>Unser Simulator zeigt in Echtzeit, wie ein typischer Inbound-Lead erfasst, bearbeitet und im Hintergrund synchronisiert wird. Vollautomatisch und ohne Ihr Zutun.</p>
+                <div class="sim-features-checklist" style="margin-top: 30px;">
+                    <ul class="use-case-list">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Echtzeit-Transkription & Sprachverarbeitung</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Intelligente Schnittstellen-Trigger (CRM/Kalender)</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Verhindert manuelle Nacharbeit im Backend</span>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="btn btn-primary open-modal-btn" style="margin-top: 30px;">Eigene Demo anfordern</a>
+            </div>
+            
+            <div class="sim-visual">
+                <div class="sim-phone-header">
+                    <div class="sim-user-status">
+                        <div class="sim-phone-avatar">AI</div>
+                        <div class="sim-phone-meta">
+                            <h4>Operativer Workflow-Check</h4>
+                            <span>System aktiv</span>
+                        </div>
+                    </div>
+                    <div class="sim-console-badge">TERMIN_DEMO_V1</div>
+                </div>
+                
+                <div class="sim-body" id="sim-body">
+                    <!-- Populated via JS animations -->
+                </div>
+                
+                <div class="sim-phone-footer" style="display: flex; align-items: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 16px;">
+                    <div class="sim-step-indicator">
+                        <div class="sim-dot active"></div>
+                        <div class="sim-dot"></div>
+                        <div class="sim-dot"></div>
+                        <div class="sim-dot"></div>
+                        <div class="sim-dot"></div>
+                        <div class="sim-dot"></div>
+                        <div class="sim-dot"></div>
+                    </div>
+                    <span style="font-size: 0.8rem; color: #64748b;">Automatische Schleife</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Calculator Section -->
+    <section id="roi" class="roi-calculator section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="badge">ROI & ROI-Rechner</div>
+                <h2>Was bringt Ihnen das KI-Büro?</h2>
+                <p>Verpasste Anrufe und WhatsApp-Nachrichten kosten direkt bares Geld. Berechnen Sie das ungenutzte Umsatzpotenzial, das Sie mit dem KI-Büro sichern können.</p>
+            </div>
+            
+            <div class="roi-card">
+                <div class="roi-inputs">
+                    <!-- Input 1 -->
+                    <div class="roi-slider-group">
+                        <div class="slider-header">
+                            <span class="slider-title">Verpasste Kontakte / Monat</span>
+                            <span class="slider-value" id="slider-value">50</span>
+                        </div>
+                        <input type="range" id="slider-calls" min="10" max="250" value="50">
+                    </div>
+                    <!-- Input 2 -->
+                    <div class="roi-slider-group">
+                        <div class="slider-header">
+                            <span class="slider-title">Ø Wert eines Leads / Kunden</span>
+                            <span class="slider-value" id="slider-lead-value-text">200 €</span>
+                        </div>
+                        <input type="range" id="slider-lead-value" min="50" max="1500" step="50" value="200">
+                    </div>
+                    <!-- Input 3 -->
+                    <div class="roi-slider-group">
+                        <div class="slider-header">
+                            <span class="slider-title">Ø Abschlussquote der Leads</span>
+                            <span class="slider-value" id="slider-conv-rate-text">20 %</span>
+                        </div>
+                        <input type="range" id="slider-conv-rate" min="5" max="60" step="5" value="20">
+                    </div>
+                </div>
+                
+                <div class="roi-outputs">
+                    <div class="roi-output-grid">
+                        <div class="roi-metric">
+                            <span class="roi-label">Zusätzlicher Umsatz / Monat</span>
+                            <span class="roi-number primary-color" id="roi-revenue">1.700 €</span>
+                        </div>
+                        <div class="roi-metric">
+                            <span class="roi-label">Eingesparte Arbeitszeit</span>
+                            <span class="roi-number success-color" id="roi-hours">8 Std.</span>
+                        </div>
+                        <div class="roi-metric">
+                            <span class="roi-label">Zusätzlicher Reingewinn / Monat*</span>
+                            <span class="roi-number" id="roi-net">1.401 €</span>
+                        </div>
+                    </div>
+                    <div style="border-top: 1px solid var(--border-color); margin-top: 24px; padding-top: 20px; display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-weight: 600; color: var(--text-secondary);">Ergebnis-Faktor (ROI):</span>
+                        <span class="roi-number success-color" id="roi-x" style="font-size: 1.8rem;">5.7x</span>
+                    </div>
+                    <p class="roi-disclaimer">*Abzüglich der monatlichen Lizenzgebühren für das Core-SaaS Paket (299 €/Monat). Zeitersparnis basiert auf durchschnittlich 12 Min. Bearbeitungszeit pro Lead.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparency GDPR & DSGVO Compliance Section -->
+    <section class="compliance-banner">
+        <div class="container compliance-container">
+            <div class="compliance-info">
+                <div class="compliance-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                </div>
+                <div class="compliance-text">
+                    <h4>Sicherheit & Datenschutz nach deutschen Standards (DSGVO)</h4>
+                    <p>Offizielle WhatsApp Business Platform API • Serverstandort in Deutschland • AVV/DPA Ordner verfügbar • Transparente Kennzeichnung als digitaler Assistent</p>
+                </div>
+            </div>
+            <a href="#" class="btn btn-white open-modal-btn">Sicherheitskonzept lesen</a>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="badge">Preise & Tarife</div>
+                <h2>Transparente Tarife für jede Unternehmensgröße</h2>
+                <p>Keine versteckten Gebühren. Wählen Sie das Paket, das am besten zu Ihrem monatlichen Inbound-Aufkommen und Ihren Standorten passt.</p>
+            </div>
+            
+            <div class="pricing-toggle-wrap">
+                <span class="toggle-label active" id="toggle-monthly">Monatliche Zahlung</span>
+                <div class="pricing-switch" id="pricing-switch"></div>
+                <span class="toggle-label" id="toggle-annual">Jährliche Vorauszahlung <span class="discount-badge">Über 16% sparen</span></span>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Plan 1 -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Core</h3>
+                        <p class="price-desc">Für Einzelstandorte & Teams von 5-30 Mitarbeitern</p>
+                    </div>
+                    <div class="price-box">
+                        <span class="price-currency">€</span>
+                        <span class="price-amount" id="price-core">299</span>
+                        <span class="price-period">/ Monat</span>
+                    </div>
+                    <a href="#" class="btn btn-secondary btn-block open-modal-btn" data-plan="Core">Core wählen</a>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>1 Telefonnummer & 1 WhatsApp-Nummer</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>300 Voice-Minuten / Monat</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>500 WhatsApp Service-Nachrichten</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>2 Kalender-Verbindungen</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>CRM-Sync & E-Mail-Summaries</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>1 Wissensbasis für FAQ</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Standard E-Mail Support</span>
+                        </li>
+                    </ul>
+                    <div class="setup-fee-note">Zzgl. 399 € Einrichtungsgebühr*</div>
+                </div>
+                
+                <!-- Plan 2 -->
+                <div class="pricing-card popular">
+                    <span class="card-badge">Empfohlen</span>
+                    <div class="pricing-header">
+                        <h3>Pro</h3>
+                        <p class="price-desc">Für wachsendes Inbound-Aufkommen und tiefere Workflows</p>
+                    </div>
+                    <div class="price-box">
+                        <span class="price-currency">€</span>
+                        <span class="price-amount" id="price-pro">499</span>
+                        <span class="price-period">/ Monat</span>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-block open-modal-btn" data-plan="Pro">Pro wählen</a>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span><strong>900 Voice-Minuten</strong> / Monat</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span><strong>1.500 WhatsApp Nachrichten</strong></span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Unbegrenzte Kalender-Verbindungen</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Priorisiertes Routing & Team-Rollen</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Tiefere CRM-Felder & Custom-Workflows</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Erweitertes Analytics-Dashboard</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Prioritäts-Support (SLA < 4 Stunden)</span>
+                        </li>
+                    </ul>
+                    <div class="setup-fee-note">Zzgl. 399 € Einrichtungsgebühr*</div>
+                </div>
+                
+                <!-- Plan 3 -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Multi-Location</h3>
+                        <p class="price-desc">Für Betriebe mit mehreren Filialen oder Marken</p>
+                    </div>
+                    <div class="price-box">
+                        <span class="price-currency">€</span>
+                        <span class="price-amount" id="price-multi">899</span>
+                        <span class="price-period">/ Monat</span>
+                    </div>
+                    <a href="#" class="btn btn-secondary btn-block open-modal-btn" data-plan="Multi-Location">Multi-Location wählen</a>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Mehrere Nummern & Standorte</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Standortbezogene Routinglogik</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Eigene Mandantentrennung & Rollenkonzepte</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Volumenbasierte Minuten-Pakete</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Quarterly Business Reviews (QBR)</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Dedizierter Account-Manager</span>
+                        </li>
+                    </ul>
+                    <div class="setup-fee-note">Zzgl. 399 € Einrichtungsgebühr*</div>
+                </div>
+            </div>
+            
+            <p style="text-align: center; margin-top: 40px; color: var(--text-muted); font-size: 0.9rem;">*Das einmalige Aktivierungs-Paket beinhaltet die Rufnummern- und WhatsApp-Einrichtung, den FAQ-Import, die Kalender-/CRM-Anbindung sowie 10 Testskripte zur Qualitätssicherung.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="badge">Fragen & Antworten</div>
+                <h2>Häufig gestellte Fragen</h2>
+                <p>Haben Sie Fragen zur Funktionsweise oder Sicherheit? Hier finden Sie schnelle Antworten.</p>
+            </div>
+            
+            <div class="faq-list">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Wie funktioniert die Einrichtung und wie lange dauert sie?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Die Inbetriebnahme läuft komplett über unser Aktivierungs-Paket ab und dauert in der Regel unter 72 Stunden. Wir kümmern uns um die Verknüpfung Ihrer Telefonnummern (oder Weiterleitungen), die Erstellung des WhatsApp Business-Kontos, die Integration Ihres Kalenders und Ihres CRMs sowie den Import Ihrer FAQ-Daten. Nach erfolgreichen Testläufen schalten wir das System live.</p>
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Ist die Kommunikation wirklich DSGVO-konform?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ja. Im Gegensatz zu privaten WhatsApp-Lösungen nutzen wir ausschließlich die offizielle WhatsApp Business Platform API. Zudem werden alle Daten DSGVO-konform auf zertifizierten Servern in Deutschland verarbeitet. Wir schließen mit jedem Kunden einen Auftragsverarbeitungsvertrag (AVV/DPA) ab. Für KI-Interaktionen wird der Anrufer/Chat-Partner transparent darauf hingewiesen, dass ein digitaler Assistent antwortet.</p>
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Was passiert bei komplexen Anfragen oder Notfällen?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Dafür besitzt das System eine eingebaute Eskalationslogik (Human Handoff). Erkennt die KI eine komplexe Frage, die nicht in der Wissensbasis hinterlegt ist, oder einen echten Notfall, schlägt sie dem Kunden einen menschlichen Rückruf vor oder leitet den Anruf an eine vordefinierte Teamnummer weiter. Gleichzeitig wird eine Benachrichtigung per E-Mail, Slack oder Teams mit dem Gesprächsverlauf gesendet.</p>
+                    </div>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Kommen monatliche Zusatzkosten für Telefonie oder WhatsApp auf uns zu?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>In den Paketen sind bereits Inklusivkontingente enthalten (z. B. 300 Voice-Minuten und 500 Service-Nachrichten im Core-Tarif). Sollte dieses Limit überschritten werden, rechnet das System minutengenau bzw. nach WhatsApp-API-Gebühren ab. Es gibt keine versteckten Kosten und Sie können Limits im Dashboard einstellen, um die volle Budgetkontrolle zu behalten.</p>
+                    </div>
+                </div>
+                <!-- FAQ 5 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Welche CRMs und Buchhaltungs-Tools werden unterstützt?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Wir bieten native Integrationspunkte für die gängigsten Werkzeuge im DACH-Mittelstand. Dazu gehören CRM-Systeme wie HubSpot und Pipedrive, Kalender-Plattformen von Google (Workspace) und Microsoft (Outlook/Exchange), sowie Buchhaltungsschnittstellen für sevdesk und Lexware Office zur automatischen Übertragung von Rechnungsdaten und Kundendaten.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo" style="margin-bottom: 20px;">
+                    <div class="logo-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    </div>
+                    <span>KI-Büro<span class="logo-accent">.ai</span></span>
+                </a>
+                <p>Das operative Frontoffice-Betriebssystem für kleine und mittlere Unternehmen im DACH-Raum. Sichern Sie jeden Erstkontakt vollautomatisch ab.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Produkt</h4>
+                <ul>
+                    <li><a href="#features">Funktionen</a></li>
+                    <li><a href="#branchen">Branchenlösungen</a></li>
+                    <li><a href="#simulator">Live-Simulation</a></li>
+                    <li><a href="#pricing">Preise & Tarife</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Integrationen</h4>
+                <ul>
+                    <li><a href="#">sipgate / Placetel</a></li>
+                    <li><a href="#">HubSpot / Pipedrive</a></li>
+                    <li><a href="#">sevdesk / Lexware</a></li>
+                    <li><a href="#">n8n Workflows</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Unternehmen</h4>
+                <ul>
+                    <li><a href="#">Über uns</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">AVV & DSGVO</a></li>
+                    <li><a href="#">Sicherheitskonzept</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2026 KI-Büro.ai. Alle Rechte vorbehalten. Ein Produkt der KI-Büro GmbH.</p>
+            <div class="footer-legal-links">
+                <a href="#">Impressum</a>
+                <a href="#">Datenschutz</a>
+                <a href="#">AGB</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lead Form Modal -->
+    <div class="modal" id="demo-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <span class="modal-close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </span>
+            
+            <form id="lead-form">
+                <div class="modal-header">
+                    <h3>Demo anfordern</h3>
+                    <p>Hinterlassen Sie uns Ihre Daten. Wir melden uns innerhalb von 2 Stunden mit einem branchenspezifischen Klick-Dummie für Ihr Unternehmen.</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="name">Ihr Name</label>
+                    <input type="text" id="name" class="form-input" placeholder="z. B. Max Mustermann" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="company">Unternehmen</label>
+                    <input type="text" id="company" class="form-input" placeholder="z. B. Muster GmbH" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-Mail-Adresse</label>
+                    <input type="email" id="email" class="form-input" placeholder="name@firma.de" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Telefonnummer</label>
+                    <input type="tel" id="phone" class="form-input" placeholder="z. B. +49 170 1234567" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="interest">Wunsch-Tarif</label>
+                    <select id="interest" class="form-input">
+                        <option value="Core">Core-Paket (299€/Monat)</option>
+                        <option value="Pro">Pro-Paket (499€/Monat)</option>
+                        <option value="Multi-Location">Multi-Location (ab 899€/Monat)</option>
+                    </select>
+                </div>
+                
+                <div class="form-checkbox-group">
+                    <input type="checkbox" id="consent" required>
+                    <label for="consent">Ich willige ein, dass KI-Büro mich zwecks Produkt-Demos und Angeboten kontaktieren darf. Meine Daten werden DSGVO-konform behandelt.</label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-block">Demo-Zugang anfordern</button>
+            </form>
+            
+            <div id="success-screen" class="success-screen">
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin: 0 auto 20px auto;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <h3>Vielen Dank für Ihr Interesse!</h3>
+                <p>Ihre Anfrage wurde erfolgreich übermittelt. Wir analysieren Ihre Website für FAQs und erstellen Ihren Demo-Flow. Ein Experte meldet sich in Kürze bei Ihnen.</p>
+                <button class="btn btn-secondary open-modal-btn" style="margin-top: 24px;" onclick="document.getElementById('demo-modal').classList.remove('active')">Schließen</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
