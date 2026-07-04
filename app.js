@@ -31,23 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 { type: 'system', text: '✓ Terminslot bei Elena blockiert & Lavendelöl-Wunsch DSGVO-konform in der Kundenkartei hinterlegt.' }
             ]
         },
-        physio: {
-            title: "YOA für Physiotherapie & Osteopathie",
-            lead: "Entlasten Sie Ihren Empfang. Die KI klärt Rezeptfragen (Kassen- oder Privatrezept), bucht Ersttermine und erfasst Patientendaten vollkommen DSGVO-konform.",
-            uses: [
-                "<strong>Rezept-Vorqualifizierung:</strong> Abfrage von Rezeptart, Heilmittelverordnung und Dringlichkeit.",
-                "<strong>DSGVO-Härtung (Art. 9):</strong> Verschlüsselte Speicherung sensibler Gesundheitsdaten nach strengsten Standards.",
-                "<strong>Wartelisten-Management:</strong> Automatisches Nachrücken von Patienten bei kurzfristigen Absagen.",
-                "<strong>Praxissoftware-Sync:</strong> Nahtlose Übertragung an Theorg, Lemniscus oder andere Praxissysteme."
-            ],
-            chat: [
-                { type: 'incoming', text: 'Hallo, ich habe eine Überweisung für 6x Krankengymnastik bekommen. Wann kann ich vorbeikommen?' },
-                { type: 'ai', text: 'Hallo! Gerne helfen wir Ihnen. Handelt es sich um ein Kassenrezept oder sind Sie privat versichert?' },
-                { type: 'incoming', text: 'Es ist ein gesetzliches Kassenrezept von meiner Orthopädin.' },
-                { type: 'ai', text: 'Vielen Dank. Ich habe für Ihren Ersttermin freie Zeiten am Montag um 08:30 Uhr bei unserem Therapeuten Herrn Schmidt. Passt das?' },
-                { type: 'system', text: '✓ Ersttermin für Krankengymnastik gebucht & Rezeptdaten verschlüsselt erfasst.' }
-            ]
-        },
+
         spa: {
             title: "YOA für Kosmetik- & Beauty-Salons",
             lead: "Erreichen Sie 100% Buchungsquote für Gesichtsbehandlungen, Maniküre und Stylings. Die KI beantwortet Fragen zu Inhaltsstoffen und empfiehlt die passenden Treatments.",
@@ -192,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             type: 'system',
-            text: '✓ Patientendaten-Schutz: Behandlungsakte verschlüsselt in deutscher Cloud angelegt',
+            text: '✓ Kundendaten-Schutz: Kundenkartei verschlüsselt in deutscher Cloud angelegt',
             duration: 1800
         }
     ];
