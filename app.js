@@ -14,72 +14,72 @@ document.addEventListener('DOMContentLoaded', () => {
     const tabContents = document.querySelectorAll('.tab-content');
 
     const verticalData = {
-        immobilien: {
-            title: "KI-Büro für Immobilienmakler & Hausverwaltungen",
-            lead: "Erreichen Sie eine lückenlose Erreichbarkeit für Miet- und Kaufinteressenten. Ihr KI-Assistent qualifiziert Anfragen vor und bucht Besichtigungstermine direkt in Ihrem Kalender.",
+        massage: {
+            title: "KI-Büro für Massage- & Wellnessstudios",
+            lead: "Sichern Sie sich jede Massagebuchung, auch außerhalb Ihrer Öffnungszeiten. Die KI berät zu Massagen, findet freie Therapeuten und bucht Termine direkt in Ihrem Kalender.",
             uses: [
-                "<strong>24/7 Lead-Intake:</strong> Erfassung von Suchprofilen, Budget und Kontaktdaten zu jeder Tageszeit.",
-                "<strong>Automatische Terminbuchung:</strong> Direktes Anbieten und Buchen von Besichtigungsterminen aus Ihrem Google- oder Outlook-Kalender.",
-                "<strong>Objekt-Routing:</strong> Weiterleitung qualifizierter Anfragen an die zuständigen Makler.",
-                "<strong>CRM-Synchronisation:</strong> Sofortiges Anlegen von Kontakten und Notizen in HubSpot oder Pipedrive."
+                "<strong>24/7 Terminbuchung:</strong> Buchen, Verschieben und Stornieren von Massagen direkt über WhatsApp oder Telefon.",
+                "<strong>Therapeuten- & Raumplanung:</strong> Die KI berücksichtigt Arbeitszeiten der Therapeuten und die Verfügbarkeit von Massageräumen.",
+                "<strong>Präferenz-Erfassung:</strong> DSGVO-konforme Speicherung von Behandlungsnotizen, Öl-Vorlieben oder Allergien.",
+                "<strong>Automatische Erinnerungen:</strong> WhatsApp-Reminders reduzieren No-Shows um bis zu 85%."
             ],
             chat: [
-                { type: 'incoming', text: 'Hallo, ich interessiere mich für die 3-Zimmer-Wohnung in der Hauptstraße. Gibt es nächste Woche Besichtigungstermine?' },
-                { type: 'ai', text: 'Guten Tag! Ja, sehr gerne. Für dieses Objekt habe ich noch freie Termine am Dienstag um 14:00 Uhr und am Donnerstag um 10:00 Uhr. Passt einer dieser Termine für Sie?' },
-                { type: 'incoming', text: 'Dienstag um 14:00 Uhr passt sehr gut bei mir.' },
-                { type: 'ai', text: 'Perfekt. Ich habe Sie für Dienstag, den 7. Juli um 14:00 Uhr eingetragen. Eine Bestätigung inklusive Adresse habe ich Ihnen per SMS und E-Mail geschickt.' },
-                { type: 'system', text: '✓ Besichtigungstermin gebucht & Kontaktdaten in HubSpot eingetragen' }
+                { type: 'incoming', text: 'Hallo! Kann ich morgen Nachmittag eine 60-minütige Aromaöl-Massage buchen?' },
+                { type: 'ai', text: 'Guten Tag! Morgen Nachmittag um 15:30 Uhr haben wir einen freien Termin bei unserer Masseurin Elena. Passt Ihnen das?' },
+                { type: 'incoming', text: 'Ja, das passt perfekt. Können wir Lavendelöl nutzen?' },
+                { type: 'ai', text: 'Sehr gerne, ich habe Elena Bescheid gegeben und Lavendelöl in Ihren Behandlungsnotizen vermerkt. Der Termin ist für Sie gebucht!' },
+                { type: 'system', text: '✓ Terminslot bei Elena blockiert & Lavendelöl-Wunsch DSGVO-konform in der Kundenkartei hinterlegt.' }
             ]
         },
-        kfz: {
-            title: "KI-Büro für KFZ-Werkstätten & Autohäuser",
-            lead: "Entlasten Sie Ihr Werkstatt-Team vom ständigen Telefonklingeln. Lassen Sie die KI Termine vergeben, Statusabfragen beantworten und Notfälle richtig zuweisen.",
+        physio: {
+            title: "KI-Büro für Physiotherapie & Osteopathie",
+            lead: "Entlasten Sie Ihren Empfang. Die KI klärt Rezeptfragen (Kassen- oder Privatrezept), bucht Ersttermine und erfasst Patientendaten vollkommen DSGVO-konform.",
             uses: [
-                "<strong>Terminannahme ohne Stress:</strong> Werkstatt-Vorgespräche für Service, Reifenwechsel oder TÜV vollautomatisch abwickeln.",
-                "<strong>Statusabfragen:</strong> Kunden können per Telefon oder WhatsApp fragen: 'Ist mein Auto schon fertig?'",
-                "<strong>Rückruf-Queue:</strong> Strukturierte Erfassung von komplexen Fällen, damit Ihr Meister gezielt zurückrufen kann.",
-                "<strong>Lexware/sevdesk-Integration:</strong> Vorbereitung von Kundendaten für die Rechnungserstellung."
+                "<strong>Rezept-Vorqualifizierung:</strong> Abfrage von Rezeptart, Heilmittelverordnung und Dringlichkeit.",
+                "<strong>DSGVO-Härtung (Art. 9):</strong> Verschlüsselte Speicherung sensibler Gesundheitsdaten nach strengsten Standards.",
+                "<strong>Wartelisten-Management:</strong> Automatisches Nachrücken von Patienten bei kurzfristigen Absagen.",
+                "<strong>Praxissoftware-Sync:</strong> Nahtlose Übertragung an Theorg, Lemniscus oder andere Praxissysteme."
             ],
             chat: [
-                { type: 'incoming', text: 'Moin, ich müsste einen Termin für den Reifenwechsel bei meinem VW Golf buchen. Habt ihr nächste Woche Zeit?' },
-                { type: 'ai', text: 'Hallo! Na klar, Reifenwechsel machen wir gerne. Nächste Woche hätte ich Mittwoch um 09:00 Uhr oder Freitag um 14:30 Uhr frei. Welchen Slot bevorzugen Sie?' },
-                { type: 'incoming', text: 'Lieber den Mittwoch um 09:00 Uhr, bitte.' },
-                { type: 'ai', text: 'Alles klar, ist für Mittwoch um 09:00 Uhr reserviert. Bitte bringen Sie Ihre Felgenschlösser mit. Sie erhalten gleich eine Bestätigung per WhatsApp.' },
-                { type: 'system', text: '✓ Werkstatt-Termin im Kalender eingetragen & Kundendetails in Lexware hinterlegt' }
+                { type: 'incoming', text: 'Hallo, ich habe eine Überweisung für 6x Krankengymnastik bekommen. Wann kann ich vorbeikommen?' },
+                { type: 'ai', text: 'Hallo! Gerne helfen wir Ihnen. Handelt es sich um ein Kassenrezept oder sind Sie privat versichert?' },
+                { type: 'incoming', text: 'Es ist ein gesetzliches Kassenrezept von meiner Orthopädin.' },
+                { type: 'ai', text: 'Vielen Dank. Ich habe für Ihren Ersttermin freie Zeiten am Montag um 08:30 Uhr bei unserem Therapeuten Herrn Schmidt. Passt das?' },
+                { type: 'system', text: '✓ Ersttermin für Krankengymnastik gebucht & Rezeptdaten verschlüsselt erfasst.' }
             ]
         },
-        beauty: {
-            title: "KI-Büro für Beauty, Wellness & Fitness",
-            lead: "Verwandeln Sie WhatsApp-Chats und Anrufe außerhalb der Öffnungszeiten in feste Buchungen. Reduzieren Sie No-Shows durch automatische, interaktive Erinnerungen.",
+        spa: {
+            title: "KI-Büro für Kosmetik- & Beauty-Salons",
+            lead: "Erreichen Sie 100% Buchungsquote für Gesichtsbehandlungen, Maniküre und Stylings. Die KI beantwortet Fragen zu Inhaltsstoffen und empfiehlt die passenden Treatments.",
             uses: [
-                "<strong>Terminbuchung & Umbuchung:</strong> 24/7 self-service über WhatsApp oder Telefon.",
-                "<strong>No-Show Reduzierung:</strong> Interaktive SMS- oder WhatsApp-Erinnerungen mit Bestätigungs-Link.",
-                "<strong>FAQ-Beantwortung:</strong> Sofortige Auskunft über Preise, Parkplätze, Gutscheine und Behandlungsdetails.",
-                "<strong>Team-Verteilung:</strong> Zuweisung von Buchungen an bestimmte Therapeuten, Trainer oder Stylisten."
+                "<strong>Treatment-Beratung:</strong> Sofortige Auskunft über Dauer, Preise, Treatments und verwendete Kosmetikprodukte.",
+                "<strong>Umsatzsteigerung durch Upsells:</strong> Vorschlag passender Zusatzbehandlungen (z. B. Augenbrauen-Styling).",
+                "<strong>Mitarbeiter-Matching:</strong> Buchung direkt bei der Wunsch-Stylistin oder dem Wunsch-Kosmetiker.",
+                "<strong>Erinnerungs-Service:</strong> Automatisches Einholen von Terminbestätigungen zur Vermeidung von Leerlauf."
             ],
             chat: [
-                { type: 'incoming', text: 'Hi! Kann ich für morgen Nachmittag spontan eine 60-Minuten-Wellnessmassage buchen?' },
-                { type: 'ai', text: 'Hallo! Morgen Nachmittag um 15:30 Uhr hat unsere Masseurin Elena einen freien Termin. Möchten Sie diesen fest buchen?' },
-                { type: 'incoming', text: 'Ja super, das nehme ich!' },
-                { type: 'ai', text: 'Hervorragend, der Termin bei Elena für morgen um 15:30 Uhr steht. Wir freuen uns auf Sie! Eine Bestätigung ist unterwegs.' },
-                { type: 'system', text: '✓ Massage-Termin gebucht & Kalender von Elena blockiert' }
+                { type: 'incoming', text: 'Hi, was kostet bei euch ein Hydrafacial und wie lange dauert das?' },
+                { type: 'ai', text: 'Hallo! Unser Hydrafacial Classic kostet 119 € und dauert ca. 60 Minuten. Möchten Sie direkt einen freien Termin dafür ansehen?' },
+                { type: 'incoming', text: 'Ja gerne, am liebsten diesen Freitag nach 15 Uhr.' },
+                { type: 'ai', text: 'Am Freitag um 16:30 Uhr hat Julia noch einen Termin frei. Soll ich diesen für Sie reservieren?' },
+                { type: 'system', text: '✓ Hydrafacial bei Julia gebucht & Bestätigung per WhatsApp gesendet.' }
             ]
         },
-        b2b: {
-            title: "KI-Büro für B2B-Dienstleister & Servicebetriebe",
-            lead: "Qualifizieren Sie eingehende B2B-Leads vollautomatisch vor. Das KI-Büro erfasst die Projektgröße, das Budget und trägt qualifizierte Leads direkt als Deal im CRM ein.",
+        yoga: {
+            title: "KI-Büro für Yoga, Pilates & Fitness",
+            lead: "Automatisieren Sie den Check-in für Probetrainings und Kurse. Die KI klärt Fragen zu Mitgliedschaften, Preisen und Kursplänen rund um die Uhr.",
             uses: [
-                "<strong>Erstqualifizierung:</strong> Gezieltes Abfragen von Anforderungen, Mitarbeiteranzahl und Zeithorizont.",
-                "<strong>CRM-Lead-Erstellung:</strong> Automatischer Sync aller Anrufe/Chats mit HubSpot oder Pipedrive inklusive Zusammenfassung.",
-                "<strong>Direkte Ersttermine:</strong> Weiterleitung an den passenden Vertriebsmitarbeiter mit freiem Kalenderslot.",
-                "<strong>Kein Lead-Verlust:</strong> Jede Anfrage wird sofort erfasst, verarbeitet und dokumentiert."
+                "<strong>Probetraining-Intake:</strong> Erfassung von Fitnesszielen, Vorkenntnissen und Buchen von Einführungsstunden.",
+                "<strong>Kursplan-Auskunft:</strong> Sofortige Beantwortung von Fragen wie: 'Wann findet der nächste Vinyasa-Yoga-Kurs statt?'",
+                "<strong>Mitgliedschafts-FAQ:</strong> Beantwortung von Fragen zu Kündigungsfristen, Tarifen und Pausen.",
+                "<strong>WhatsApp-Marketing:</strong> DSGVO-konforme Ankündigung von Specials und Workshops (nur mit Double Opt-In)."
             ],
             chat: [
-                { type: 'incoming', text: 'Guten Tag, wir benötigen eine Beratung für eine IT-Infrastruktur-Erweiterung für ca. 30 Arbeitsplätze.' },
-                { type: 'ai', text: 'Guten Tag! Gerne helfen wir Ihnen dabei. Nutzen Sie aktuell primär On-Premise-Server oder eine Cloud-Infrastruktur wie Azure oder AWS?' },
-                { type: 'incoming', text: 'Wir sind komplett in der Microsoft Cloud (Azure & M365).' },
-                { type: 'ai', text: 'Verstanden. Ich erstelle ein Ticket für unser Cloud-Team. Wann passt Ihnen ein 15-minütiges Erstgespräch mit unserem Experten Herr Müller am Donnerstag?' },
-                { type: 'system', text: '✓ B2B-Lead qualifiziert, Deal in Pipedrive angelegt & Task für Vertrieb erstellt' }
+                { type: 'incoming', text: 'Hallo, ich würde gerne Yoga ausprobieren. Kann ich ein Probetraining machen?' },
+                { type: 'ai', text: 'Hi! Ja, super gerne. Wir haben am Donnerstag um 18:00 Uhr einen Einsteiger-Vinyasa-Kurs. Möchtest du dich dafür anmelden?' },
+                { type: 'incoming', text: 'Ja, das klingt gut. Ich bin Anfänger, ist das okay?' },
+                { type: 'ai', text: 'Absolut! Der Kurs ist perfekt für Anfänger geeignet. Ich habe dich eingebucht. Bring bitte bequeme Kleidung mit, Matten haben wir vor Ort.' },
+                { type: 'system', text: '✓ Probetraining im Vinyasa-Kurs eingetragen & Check-in-Code per WhatsApp verschickt.' }
             ]
         }
     };
@@ -145,45 +145,55 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize first chat render
     const initialChatContainer = document.querySelector('.tab-content.active .chat-messages');
     if (initialChatContainer) {
-        renderVerticalChat(verticalData.immobilien.chat, initialChatContainer);
+        renderVerticalChat(verticalData.massage.chat, initialChatContainer);
     }
 
-    // Dynamic Live Simulator Logic
+    // Dynamic Live Simulator Logic - Massage booking & GDPR
     const simSteps = [
         {
             type: 'incoming',
-            text: 'Hallo, ich bräuchte dringend einen Termin für eine Beratung.',
-            duration: 1500
+            text: 'Hallo, ich würde gerne eine 90-Minuten-Ganzkörpermassage für Samstag buchen. Habt ihr da einen Termin frei?',
+            duration: 2000
         },
         {
             type: 'ai',
-            text: 'Hallo! Sehr gerne helfe ich Ihnen. Um welchen Bereich geht es und wann passt es Ihnen am besten?',
-            duration: 2000
+            text: 'Hallo! Ja, sehr gerne. Am Samstag um 14:00 Uhr haben wir noch einen freien Slot bei unserer Masseurin Elena. Würde Ihnen das passen?',
+            duration: 2500
         },
         {
             type: 'incoming',
-            text: 'Es geht um eine Projektberatung, idealerweise diesen Freitagvormittag.',
+            text: 'Das passt perfekt! Ist Elena eine zertifizierte Masseurin?',
             duration: 1500
         },
         {
             type: 'ai',
-            text: 'Freitag um 10:00 Uhr habe ich noch einen freien Termin für Sie. Ich habe diesen reserviert und schicke Ihnen die Bestätigung.',
-            duration: 2000
+            text: 'Ja, Elena ist staatlich anerkannte Masseurin mit 5 Jahren Erfahrung. Zur Buchung benötige ich noch Ihren Namen und Ihr kurzes Einverständnis (Opt-in) für unsere DSGVO-konformen Termin-Erinnerungen.',
+            duration: 3000
+        },
+        {
+            type: 'incoming',
+            text: 'Mein Name ist Sarah König. Ich stimme der DSGVO-Verarbeitung für meine Buchung und Erinnerungen per WhatsApp zu.',
+            duration: 2200
+        },
+        {
+            type: 'ai',
+            text: 'Super, vielen Dank Frau König! Der Termin am Samstag um 14:00 Uhr bei Elena ist fest für Sie gebucht. Ich habe Ihnen die Bestätigung gerade per WhatsApp zugeschickt.',
+            duration: 2500
         },
         {
             type: 'system',
-            text: '✓ Google Calendar: Termin am Freitag um 10:00 Uhr eingetragen.',
-            duration: 1000
+            text: '✓ Kalender blockiert: Elena (Samstag, 14:00 Uhr, Massage-Raum 2)',
+            duration: 1200
         },
         {
             type: 'system',
-            text: '✓ HubSpot: Neuer Lead erstellt & Kontaktdaten synchronisiert.',
-            duration: 1000
+            text: '✓ DSGVO-Opt-In: Einverständnis von Sarah König verschlüsselt protokolliert',
+            duration: 1200
         },
         {
             type: 'system',
-            text: '✓ Team-Notiz: E-Mail-Zusammenfassung an Mitarbeiter gesendet.',
-            duration: 1500
+            text: '✓ Patientendaten-Schutz: Behandlungsakte verschlüsselt in deutscher Cloud angelegt',
+            duration: 1800
         }
     ];
 
@@ -235,7 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
         simInterval = setTimeout(runSimulator, step.duration);
     }
 
-    // Start simulator and restart if visible
+    // Start simulator
     runSimulator();
 
     // ROI Calculator Section
