@@ -14,14 +14,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const tabContents = document.querySelectorAll('.tab-content');
 
     const verticalData = {
-        massage: {
-            title: "YOA für Massage- & Wellnessstudios",
-            lead: "Sichern Sie sich jede Massagebuchung, auch außerhalb Ihrer Öffnungszeiten. Die KI berät zu Massagen, findet freie Therapeuten und bucht Termine direkt in Ihrem Kalender.",
+        beauty: {
+            title: "YOA für Wellness- & Beauty-Salons",
+            lead: "Verpassen Sie keine Terminanfrage für Massagen, Kosmetikbehandlungen, Nagelpflege oder Haarschnitte. YOA bucht Termine 24/7 über Telefon und WhatsApp.",
             uses: [
-                "<strong>24/7 Terminbuchung:</strong> Buchen, Verschieben und Stornieren von Massagen direkt über WhatsApp oder Telefon.",
-                "<strong>Mitarbeiter- & Raumplanung:</strong> Die KI berücksichtigt Arbeitszeiten der Therapeuten und die Verfügbarkeit von Massageräumen.",
-                "<strong>Eskalation bei Sonderfragen:</strong> Die KI erkennt medizinische oder behandlungsbezogene Fragen und leitet diese zur persönlichen Klärung an Ihr Team weiter.",
-                "<strong>Automatische Erinnerungen:</strong> WhatsApp-Reminders reduzieren No-Shows um bis zu 85%."
+                "<strong>24/7 Terminbuchung:</strong> Buchen, Verschieben und Stornieren direkt im Chat oder Anruf.",
+                "<strong>Mitarbeiter-Matching:</strong> Buchungen gezielt bei der Wunsch-Stylistin oder dem Wunsch-Masseur.",
+                "<strong>DSGVO-Datenschutz:</strong> Keine Speicherung sensibler Gesundheitsakten, sicherer Schutz von Standarddaten.",
+                "<strong>No-Show Reduzierung:</strong> Interaktive WhatsApp-Erinnerungen für Ihre Kunden."
             ],
             chat: [
                 { type: 'incoming', text: 'Hallo! Kann ich morgen Nachmittag eine 60-minütige Aromaöl-Massage buchen?' },
@@ -32,39 +32,55 @@ document.addEventListener('DOMContentLoaded', () => {
                 { type: 'system', text: '✓ Termin reserviert & Schwangerschafts-Rückfrage direkt an Mitarbeiter eskaliert.' }
             ]
         },
-
-        spa: {
-            title: "YOA für Kosmetik- & Beauty-Salons",
-            lead: "Erreichen Sie 100% Buchungsquote für Gesichtsbehandlungen, Maniküre und Stylings. Die KI beantwortet Fragen zu Inhaltsstoffen und empfiehlt die passenden Treatments.",
+        fitness: {
+            title: "YOA für Fitness- & Coaching-Studios",
+            lead: "Automatisieren Sie den Check-in für Probetrainings, Kurse und Personal Trainings. YOA beantwortet Fragen zu Kurszeiten, Preisen und Abos.",
             uses: [
-                "<strong>Treatment-Beratung:</strong> Sofortige Auskunft über Dauer, Preise, Treatments und verwendete Kosmetikprodukte.",
-                "<strong>Umsatzsteigerung durch Upsells:</strong> Vorschlag passender Zusatzbehandlungen (z. B. Augenbrauen-Styling).",
-                "<strong>Mitarbeiter-Matching:</strong> Buchung direkt bei der Wunsch-Stylistin oder dem Wunsch-Kosmetiker.",
-                "<strong>Erinnerungs-Service:</strong> Automatisches Einholen von Terminbestätigungen zur Vermeidung von Leerlauf."
-            ],
-            chat: [
-                { type: 'incoming', text: 'Hi, was kostet bei euch ein Hydrafacial und wie lange dauert das?' },
-                { type: 'ai', text: 'Hallo! Unser Hydrafacial Classic kostet 119 € und dauert ca. 60 Minuten. Möchten Sie direkt einen freien Termin dafür ansehen?' },
-                { type: 'incoming', text: 'Ja gerne, am liebsten diesen Freitag nach 15 Uhr.' },
-                { type: 'ai', text: 'Am Freitag um 16:30 Uhr hat Julia noch einen Termin frei. Soll ich diesen für Sie reservieren?' },
-                { type: 'system', text: '✓ Hydrafacial bei Julia gebucht & Bestätigung per WhatsApp gesendet.' }
-            ]
-        },
-        yoga: {
-            title: "YOA für Yoga, Pilates & Fitness",
-            lead: "Automatisieren Sie den Check-in für Probetrainings und Kurse. Die KI klärt Fragen zu Mitgliedschaften, Preisen und Kursplänen rund um die Uhr.",
-            uses: [
-                "<strong>Probetraining-Intake:</strong> Erfassung von Fitnesszielen, Vorkenntnissen und Buchen von Einführungsstunden.",
-                "<strong>Kursplan-Auskunft:</strong> Sofortige Beantwortung von Fragen wie: 'Wann findet der nächste Vinyasa-Yoga-Kurs statt?'",
-                "<strong>Mitgliedschafts-FAQ:</strong> Beantwortung von Fragen zu Kündigungsfristen, Tarifen und Pausen.",
-                "<strong>WhatsApp-Marketing:</strong> DSGVO-konforme Ankündigung von Specials und Workshops (nur mit Double Opt-In)."
+                "<strong>Kursplan-Auskunft:</strong> Sofortige Beantwortung von Fragen zu Kurszeiten (z. B. Yoga, Pilates).",
+                "<strong>Probetraining-Intake:</strong> Erfassung von Trainingszielen und Buchung von Einführungsstunden.",
+                "<strong>Mitglieder-FAQ:</strong> Beantwortung wiederkehrender Fragen zu Kündigungen und Tarifen.",
+                "<strong>WhatsApp-Checkin:</strong> Zusendung von Buchungscodes direkt aufs Handy."
             ],
             chat: [
                 { type: 'incoming', text: 'Hallo, ich würde gerne Yoga ausprobieren. Kann ich ein Probetraining machen?' },
                 { type: 'ai', text: 'Hi! Ja, super gerne. Wir haben am Donnerstag um 18:00 Uhr einen Einsteiger-Vinyasa-Kurs. Möchtest du dich dafür anmelden?' },
-                { type: 'incoming', text: 'Ja, das klingt gut. Ich bin Anfänger, ist das okay?' },
-                { type: 'ai', text: 'Absolut! Der Kurs ist perfekt für Anfänger geeignet. Ich habe dich eingebucht. Bring bitte bequeme Kleidung mit, Matten haben wir vor Ort.' },
-                { type: 'system', text: '✓ Probetraining im Vinyasa-Kurs eingetragen & Check-in-Code per WhatsApp verschickt.' }
+                { type: 'incoming', text: 'Ja, das klingt gut. Ich habe allerdings Knieprobleme - ist der Kurs geeignet?' },
+                { type: 'ai', text: 'Vielen Dank für den Hinweis. Gesundheitliche Fragen bespricht unser Trainer-Team am besten direkt mit dir vor Ort. Ich buche dich für den Kurs ein und gebe dem Trainer Bescheid, damit er dich vor der Stunde kurz ansprechen kann. Passt das?' },
+                { type: 'system', text: '✓ Platz im Yoga-Kurs gebucht & Knie-Hinweis für den Trainer eskaliert.' }
+            ]
+        },
+        craft: {
+            title: "YOA für Werkstätten & Handwerksbetriebe",
+            lead: "Entlasten Sie Ihr Team in der Werkstatt vom Telefonstress. YOA vergibt Termine für Reifenwechsel, Inspektion oder Reparaturen vollautomatisch.",
+            uses: [
+                "<strong>Terminvergabe ohne Störung:</strong> Keine Unterbrechungen beim Schrauben – YOA bucht direkt in den Werkstattkalender.",
+                "<strong>Statusabfragen:</strong> Kunden können fragen: 'Ist mein Auto fertig?' – YOA liest den Status aus Ihrem System.",
+                "<strong>Rückruf-Warteschlange:</strong> Strukturierte Aufnahme komplexer Reparaturwünsche für gezielte Rückrufe des Meisters.",
+                "<strong>Lexware/sevdesk-Sync:</strong> Automatische Anlage von Kunden- und Auftragsdaten in Ihrer Buchhaltung."
+            ],
+            chat: [
+                { type: 'incoming', text: 'Hallo, mein Auto braucht einen Ölwechsel. Habt ihr nächste Woche Zeit?' },
+                { type: 'ai', text: 'Hallo! Ja, gerne. Für den Ölwechsel haben wir am nächsten Dienstag um 09:00 Uhr oder Donnerstag um 14:00 Uhr einen freien Werkstattplatz. Welcher Termin passt Ihnen?' },
+                { type: 'incoming', text: 'Dienstag um 9 Uhr passt. Mein Getriebe knackt auch ein bisschen - könnt ihr danach schauen?' },
+                { type: 'ai', text: 'Alles klar, den Ölwechsel trage ich ein. Wegen des Getriebeknackens wird sich unser Werkstattmeister Herr Müller kurz persönlich bei Ihnen melden, um das genauer zu besprechen. Ich habe Ihre Nummer weitergeleitet.' },
+                { type: 'system', text: '✓ Ölwechsel-Termin gebucht & Getriebe-Rückruf-Ticket für Meister erstellt.' }
+            ]
+        },
+        service: {
+            title: "YOA für Fahrschulen, Coaching & Dienstleister",
+            lead: "Automatisieren Sie die Erstanmeldung und Lead-Erfassung. YOA nimmt Anfragen rund um die Uhr auf und trägt Leads direkt in Ihr CRM ein.",
+            uses: [
+                "<strong>Lead-Erfassung 24/7:</strong> Qualifizierung von Anfragen (Führerscheinklasse, Coaching-Paket, Budget) zu jeder Uhrzeit.",
+                "<strong>Erstgespräche buchen:</strong> Direkte Vergabe von Beratungsterminen bei freien Beratern oder Fahrlehrern.",
+                "<strong>DSGVO-konforme Dokumentation:</strong> Sichere Erfassung aller Kontaktdaten im CRM (HubSpot/Pipedrive).",
+                "<strong>FAQ-Beantwortung:</strong> Sofortige Infos zu Preisen, Schulungszeiten, Ablauf und Voraussetzungen."
+            ],
+            chat: [
+                { type: 'incoming', text: 'Hallo, ich würde mich gerne für den Führerschein Klasse B anmelden. Was kostet das?' },
+                { type: 'ai', text: 'Guten Tag! Gerne helfen wir Ihnen. Unser Grundbetrag für Klasse B liegt bei 350 € zzgl. Fahrstunden. Möchten Sie einen kurzen Info-Termin mit unserem Fahrlehrer buchen?' },
+                { type: 'incoming', text: 'Ja, gerne. Habt ihr auch Abendtermine?' },
+                { type: 'ai', text: 'Ja, wir bieten auch Termine abends an. Am Donnerstag um 18:30 Uhr ist ein Fahrlehrer frei. Soll ich Sie einbuchen?' },
+                { type: 'system', text: '✓ Info-Termin für Fahrschule gebucht & Lead in HubSpot angelegt.' }
             ]
         }
     };
@@ -130,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize first chat render
     const initialChatContainer = document.querySelector('.tab-content.active .chat-messages');
     if (initialChatContainer) {
-        renderVerticalChat(verticalData.massage.chat, initialChatContainer);
+        renderVerticalChat(verticalData.beauty.chat, initialChatContainer);
     }
 
     // Dynamic Live Simulator Logic - Massage booking & GDPR
